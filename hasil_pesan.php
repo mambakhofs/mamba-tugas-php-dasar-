@@ -1,16 +1,11 @@
 <?php
-if (
-    isset($_POST["nama"]) AND
-    isset($_POST["kelas"]) AND
-    isset($_POST["pesan"])
-) {
+if (!isset($_POST['nama']) || !isset($_POST['kelas']) || !isset($_POST['pesan'])){
+    header("Location: form_pesan.php");
+    exit;
+    } 
     $nama = $_POST["nama"];
     $kelas = $_POST["kelas"];
     $pesan = $_POST["pesan"];
-} else {
-    header("Location: form.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>

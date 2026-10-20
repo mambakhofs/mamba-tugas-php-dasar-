@@ -1,13 +1,13 @@
 <?php
-if (
-    isset($_GET["nim"]) AND
-    isset($_GET["nama"]) AND
-    isset($_GET["jurusan"]) AND
-    isset($_GET["email"]) AND
-    isset($_GET["nilai"]) AND
-    isset($_GET["grade"]) AND
-    isset($_GET["status"])
-) {
+$param_Get = ['nim', 'nama', 'jurusan', 'email', 'nilai', 'grade', 'status'];
+
+foreach ($param_Get as $cek_paramGet) {
+
+if (!isset($_GET[$cek_paramGet])) {
+    header("Location: index.php");
+    exit;
+}
+}
     $nim     = $_GET["nim"];
     $nama    = $_GET["nama"];
     $jurusan = $_GET["jurusan"];
@@ -15,10 +15,6 @@ if (
     $nilai   = $_GET["nilai"];
     $grade   = $_GET["grade"];
     $status  = $_GET["status"];
-} else {
-    header("Location: index.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
