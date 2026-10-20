@@ -39,31 +39,31 @@ if (
             <table class="table table-borderless">
                 <tr>
                     <th width="30%">NIM</th>
-                    <td>: <?= $_GET["nim"] ?? '-' ?></td>
+                    <td>: <?= $_GET["nim"] ?></td>
                 </tr>
                 <tr>
                     <th>Nama</th>
-                    <td>: <?= $_GET["nama"] ?? '-' ?></td>
+                    <td>: <?= $_GET["nama"] ?></td>
                 </tr>
                 <tr>
                     <th>Jurusan</th>
-                    <td>: <?= $_GET["jurusan"] ?? '-' ?></td>
+                    <td>: <?= $_GET["jurusan"] ?></td>
                 </tr>
                 <tr>
                     <th>Email</th>
-                    <td>: <?= $_GET["email"] ?? '-' ?></td>
+                    <td>: <?= $_GET["email"] ?></td>
                 </tr>
                 <tr>
                     <th>Nilai</th>
-                    <td>: <?= $_GET["nilai"] ?? '-' ?></td>
+                    <td>: <?= $_GET["nilai"] ?></td>
                 </tr>
                 <tr>
                     <th>Grade</th>
-                    <td>: <?= $_GET["grade"] ?? '-' ?></td>
+                    <td>: <?= $_GET["grade"] ?></td>
                 </tr>
                 <tr>
                     <th>Status</th>
-                    <td>: <?= $_GET["status"] ?? '-' ?></td>
+                    <td>: <?= $_GET["status"] ?></td>
                 </tr>
             </table>
             <a href="index.php" class="btn btn-success text-white">Kembali</a>
