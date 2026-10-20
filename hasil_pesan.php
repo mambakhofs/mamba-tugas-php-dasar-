@@ -3,9 +3,6 @@ if (!isset($_POST['nama']) || !isset($_POST['kelas']) || !isset($_POST['pesan'])
     header("Location: form_pesan.php");
     exit;
     } 
-    $nama = $_POST["nama"];
-    $kelas = $_POST["kelas"];
-    $pesan = $_POST["pesan"];
 ?>
 
 <!DOCTYPE html>
@@ -21,21 +18,21 @@ if (!isset($_POST['nama']) || !isset($_POST['kelas']) || !isset($_POST['pesan'])
     <div class="card col-md-6 mx-auto">
         <div class="card-header">
             <h4 class="mb-0">Pesan Berhasil dikirim!</h4>
-            <p>Terima kasih, <?= $nama ?>!</p>
+            <p>Terima kasih, <?= $_POST['nama'] ?>!</p>
         </div>
         <div class="card-body">
             <table class="table table-borderless">
                 <tr>
                     <th width="30%">Nama</th>
-                    <td>: <?= $nama ?></td>
+                    <td>: <?= $_POST['nama'] ?></td>
                 </tr>
                 <tr>
                     <th>Kelas</th>
-                    <td>: <?= $kelas ?></td>
+                    <td>: <?= $_POST['kelas'] ?></td>
                 </tr>
                 <tr>
                     <th>Pesan / Kesan</th>
-                    <td>: <?= $pesan ?></td>
+                    <td>: <?= $_POST['pesan'] ?></td>
                 </tr>
             </table>
             <a href="index.php" class="btn btn-info text-white">Kembali ke Data Mahasiswa</a>

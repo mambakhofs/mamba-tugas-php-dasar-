@@ -8,13 +8,6 @@ if (!isset($_GET[$cek_paramGet])) {
     exit;
 }
 }
-    $nim     = $_GET["nim"];
-    $nama    = $_GET["nama"];
-    $jurusan = $_GET["jurusan"];
-    $email   = $_GET["email"];
-    $nilai   = $_GET["nilai"];
-    $grade   = $_GET["grade"];
-    $status  = $_GET["status"];
 ?>
 
 <!DOCTYPE html>
